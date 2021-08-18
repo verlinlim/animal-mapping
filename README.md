@@ -34,6 +34,10 @@ Shark and Clownfish both then extends Fish Object and inherits these 2 variables
 The variables are initialized in the constructor.
 Since making jokes and eating fishes are only unique to the individual object, it is declared as a method in the individual object.
 
+#B3
+Created a Dolphin class that implements CanSwim.
+Since CanSwim is a independant interface, we can reuse it for Fishes and Dolphins and Ducks without duplicating the codes.
+
 #D
 For counting of number of animals that can fly, walk, sing, swim, 
 I checked if the animal object is an instance of the interface and added it to a count.
