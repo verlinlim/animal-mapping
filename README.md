@@ -8,8 +8,9 @@ There are 4 interfaces: CanFly, CanWalk, CanSwim, CanSing.
 
 All objects (Fish, Birds) are subclass of Animal.
 
-Duck, Chicken, Parrots are subclass of Birds.
-Since not all birds can fly, Birds object does not implements CanFly, but rather, the subclasses itself will implement.
+Since not all birds can fly, Birds object does not implements CanFly.
+I created 2 subclass of Bird: Flyable & Non Flyable Birds.
+Duck, Parrots are subclass of FLyable Birds and Chicken is subclass of Non Flyable Birds.
 
 Rooster is a type of Chicken.
 In my design, I did not specify another object for Rooster.

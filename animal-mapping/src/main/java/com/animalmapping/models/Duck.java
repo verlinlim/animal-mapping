@@ -1,18 +1,12 @@
 package com.animalmapping.models;
-import com.animalmapping.interfaces.CanFly;
 import com.animalmapping.interfaces.CanSwim;
 import com.animalmapping.constants.Messages;
 
 
-public class Duck extends Bird implements CanSwim, CanFly{
+public class Duck extends FlyableBird implements CanSwim{
 	@Override
 	public void swim() {
 		System.out.println(Messages.swiming);		
-	}
-	
-	@Override
-	public void fly() {
-		System.out.println(Messages.flying);
 	}
 	
 	@Override

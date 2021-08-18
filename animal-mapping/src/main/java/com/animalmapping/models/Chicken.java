@@ -3,7 +3,7 @@ import com.animalmapping.constants.Codes;
 import com.animalmapping.constants.Messages;
 
 
-public class Chicken extends Bird {
+public class Chicken extends NonFlyableBird {
 	
 	public String gender = Codes.gender_f;
 	

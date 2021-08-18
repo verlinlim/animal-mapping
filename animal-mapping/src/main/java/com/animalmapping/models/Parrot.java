@@ -1,10 +1,9 @@
 package com.animalmapping.models;
 import com.animalmapping.constants.Codes;
 import com.animalmapping.constants.Messages;
-import com.animalmapping.interfaces.CanFly;
 
 
-public class Parrot extends Bird implements CanFly {
+public class Parrot extends FlyableBird  {
 	
 	public String housemate;
 	
@@ -21,9 +20,5 @@ public class Parrot extends Bird implements CanFly {
 		System.out.println(sound);		
 	}
 	
-	@Override
-	public void fly() {
-		System.out.println(Messages.flying);
-	}
 	
 }
