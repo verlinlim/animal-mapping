@@ -1,5 +1,10 @@
 package com.animalmapping;
 import com.animalmapping.constants.Codes;
+import com.animalmapping.interfaces.CanFly;
+import com.animalmapping.interfaces.CanSing;
+import com.animalmapping.interfaces.CanSwim;
+import com.animalmapping.interfaces.CanWalk;
+import com.animalmapping.models.Animal;
 import com.animalmapping.models.Bird;
 import com.animalmapping.models.Chicken;
 import com.animalmapping.models.Duck;
@@ -25,7 +30,6 @@ class AnimalMappingApplicationTests {
 		
 		Chicken chicken = new Chicken();
 		chicken.sing();
-		chicken.fly();
 	}
 	
 	@Test
@@ -38,7 +42,7 @@ class AnimalMappingApplicationTests {
 	}
 	
 	@Test
-	void qnA4Parrot() {		
+	void qnA4Parrot() {	
 		Parrot parrotDog = new Parrot(Codes.animal_dog);
 		parrotDog.sing();
 
@@ -50,7 +54,38 @@ class AnimalMappingApplicationTests {
 		
 		Parrot parrot = new Parrot();
 		parrot.sing();
+		
 	}
+	@Test
+	void qnDCount() {	
+		Animal[] animals= {
+				new Parrot(),
+				new Chicken(),
+				new Chicken(Codes.gender_m),
+				new Duck()
+		};
+	    int flyingAnimal = 0;
+	    int walkingAnimal = 0;
+	    int speakingAnimal = 0;
+	    int swimingAnimal = 0;
+		 
+	        for (int i = 0; i < animals.length; i++) {
+	            if (animals[i] instanceof CanFly) {
+	                flyingAnimal += 1;
+	            }
+	            if (animals[i] instanceof CanWalk) {
+	                walkingAnimal += 1;
+	            }
+	            if (animals[i] instanceof CanSing) {
+	                speakingAnimal += 1;
+	            }
+	            if (animals[i] instanceof CanSwim) {
+	                swimingAnimal += 1;
+	            }
+	        }
+	}
+	
+	
 
 
 }

@@ -24,8 +24,5 @@ public class Chicken extends Bird {
 		}
 	}
 	
-	@Override
-	public void fly() {
-		 //cannot fly
-	}
+	
 }
