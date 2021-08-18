@@ -6,8 +6,11 @@ import com.animalmapping.interfaces.CanSwim;
 import com.animalmapping.interfaces.CanWalk;
 import com.animalmapping.models.Animal;
 import com.animalmapping.models.Bird;
+import com.animalmapping.models.Butterfly;
+import com.animalmapping.models.Caterpillar;
 import com.animalmapping.models.Chicken;
 import com.animalmapping.models.ClownFish;
+import com.animalmapping.models.Dolphin;
 import com.animalmapping.models.Duck;
 import com.animalmapping.models.Fish;
 import com.animalmapping.models.Parrot;
@@ -81,12 +84,29 @@ class AnimalMappingApplicationTests {
 		
 	}
 	@Test
+	void qnB3Dolphins() {	
+		Dolphin dolphin = new Dolphin();
+		dolphin.swim();		
+	}
+	
+	@Test
+	void qnCButterflyAndCaterpillar() {	
+		Caterpillar caterpillar = new Caterpillar();
+		caterpillar.walk();	
+		Butterfly butterfly = caterpillar.metamorphosis();
+		butterfly.fly();
+	}
+	@Test
 	void qnDCount() {	
 		Animal[] animals= {
 				new Parrot(),
 				new Chicken(),
 				new Chicken(Codes.gender_m),
-				new Duck()
+				new Duck(),
+				new Fish(),
+				new Shark(),
+				new ClownFish(),
+				new Butterfly()
 		};
 	    int flyingAnimal = 0;
 	    int walkingAnimal = 0;

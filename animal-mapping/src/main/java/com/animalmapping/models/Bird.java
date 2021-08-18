@@ -10,10 +10,4 @@ public class Bird extends Animal implements  CanSing, CanWalk{
 	public void sing() {
 		System.out.println(Messages.singing);		
 	}
-	
-	
-	@Override
-	public void walk() {
-		System.out.println(Messages.walking);
-	}
 }

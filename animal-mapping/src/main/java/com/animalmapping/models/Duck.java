@@ -4,10 +4,6 @@ import com.animalmapping.constants.Messages;
 
 
 public class Duck extends FlyableBird implements CanSwim{
-	@Override
-	public void swim() {
-		System.out.println(Messages.swiming);		
-	}
 	
 	@Override
 	public void sing() {

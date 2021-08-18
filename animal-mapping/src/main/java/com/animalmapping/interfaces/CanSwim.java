@@ -1,7 +1,11 @@
 package com.animalmapping.interfaces;
 
+import com.animalmapping.constants.Messages;
+
 public interface CanSwim{
 	
-	public void swim();
+	public default void swim() {
+		System.out.println(Messages.swiming);
+	};
 
 }

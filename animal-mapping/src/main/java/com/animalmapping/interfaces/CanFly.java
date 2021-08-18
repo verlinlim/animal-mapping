@@ -1,7 +1,12 @@
 package com.animalmapping.interfaces;
 
+import com.animalmapping.constants.Messages;
+
 public interface CanFly{
 	
-	public void fly();
+	public default void fly() {;
+	System.out.println(Messages.flying);
+
+	}
 
 }
