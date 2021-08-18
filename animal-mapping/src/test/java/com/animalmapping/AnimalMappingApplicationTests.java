@@ -1,4 +1,5 @@
 package com.animalmapping;
+import com.animalmapping.constants.Codes;
 import com.animalmapping.models.Bird;
 import com.animalmapping.models.Chicken;
 import com.animalmapping.models.Duck;
@@ -24,6 +25,15 @@ class AnimalMappingApplicationTests {
 		Chicken chicken = new Chicken();
 		chicken.sing();
 		chicken.fly();
+	}
+	
+	@Test
+	void qnA3Rooster() {		
+		Chicken chicken = new Chicken();
+		chicken.sing();
+
+		Chicken rooster = new Chicken(Codes.gender_m);
+		rooster.sing();
 	}
 
 
