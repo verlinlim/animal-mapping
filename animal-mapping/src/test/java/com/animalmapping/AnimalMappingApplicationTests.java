@@ -7,9 +7,11 @@ import com.animalmapping.interfaces.CanWalk;
 import com.animalmapping.models.Animal;
 import com.animalmapping.models.Bird;
 import com.animalmapping.models.Chicken;
+import com.animalmapping.models.ClownFish;
 import com.animalmapping.models.Duck;
 import com.animalmapping.models.Fish;
 import com.animalmapping.models.Parrot;
+import com.animalmapping.models.Shark;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -62,6 +64,20 @@ class AnimalMappingApplicationTests {
 	void qnB1Fishes() {	
 		Fish fish = new Fish();
 		fish.swim();
+		
+	}
+	
+	@Test
+	void qnB2SharkAndClownFish() {	
+		Shark shark = new Shark();
+		shark.getColour();
+		shark.getSize();
+		shark.eatFish();
+		
+		ClownFish clownFish = new ClownFish();
+		clownFish.getColour();
+		clownFish.getSize();
+		clownFish.makeJokes();
 		
 	}
 	@Test

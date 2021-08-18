@@ -20,6 +20,15 @@ public interface Codes{
 	    entry(animal_rooster, Messages.rooster_singing)
 
 	);
+	
+	
+	public static final String color_grey="GREY";
+	public static final String color_orange="ORANGE";
+	
+	public static final String size_large="LARGE";
+	public static final String size_small="SMALL";
+
+
 
 
 

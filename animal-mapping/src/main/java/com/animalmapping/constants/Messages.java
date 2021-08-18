@@ -11,6 +11,9 @@ public interface Messages{
 	public static final String dog_singing="Woof, woof";
 	public static final String cat_singing="Me ow";
 
+	public static final String clownfish_jokes="Clownfish making some jokes";
+	public static final String shark_eating_fishes="Shark eating fishes";
+
 
 
 
