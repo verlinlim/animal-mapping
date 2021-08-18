@@ -38,6 +38,11 @@ Since making jokes and eating fishes are only unique to the individual object, i
 Created a Dolphin class that implements CanSwim.
 Since CanSwim is a independant interface, we can reuse it for Fishes and Dolphins and Ducks without duplicating the codes.
 
+#C1-2
+Butterfly implements CanFly.
+Caterpillar implements CanWalk.
+Butterfly & Caterpillar has a 1 to 1 relationship.
+
 #D
 For counting of number of animals that can fly, walk, sing, swim, 
 I checked if the animal object is an instance of the interface and added it to a count.
