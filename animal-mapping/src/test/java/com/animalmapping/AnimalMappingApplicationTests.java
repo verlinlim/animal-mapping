@@ -8,6 +8,7 @@ import com.animalmapping.models.Animal;
 import com.animalmapping.models.Bird;
 import com.animalmapping.models.Chicken;
 import com.animalmapping.models.Duck;
+import com.animalmapping.models.Fish;
 import com.animalmapping.models.Parrot;
 
 import org.junit.jupiter.api.Test;
@@ -54,6 +55,13 @@ class AnimalMappingApplicationTests {
 		
 		Parrot parrot = new Parrot();
 		parrot.sing();
+		
+	}
+	
+	@Test
+	void qnB1Fishes() {	
+		Fish fish = new Fish();
+		fish.swim();
 		
 	}
 	@Test
